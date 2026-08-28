@@ -14,9 +14,9 @@
 ```python
 from labkit import record
 
-run = record.start("gamma sweep", params={"gamma": 2.2})
-run.metric("ssim", 0.834)
-run.note("halos", "ореол навколо яскравої везикули")
+run = record.start("baseline", params={"alpha": 2.2})
+run.metric("score", 0.834)
+run.note("artifacts", "видно в темних ділянках")
 run.done()
 ```
 
